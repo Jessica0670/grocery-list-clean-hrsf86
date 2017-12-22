@@ -11,7 +11,7 @@ class AddGrocery extends React.Component {
     	<div>
     		<input id="inputGrocery" type="text" placeholder="What do you need to buy?"/>
     		<input id="inputQty" type="text" placeholder="How many?"/>
-    		<input id="submit" type="submit"/>
+    		<input onClick={this.props.listener} id="submit" type="submit"/>
     	</div>
     )
   }

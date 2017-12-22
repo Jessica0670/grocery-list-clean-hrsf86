@@ -12,10 +12,16 @@ class App extends React.Component {
     }
   }
   
+  submit(e) {
+    console.log(e, 'working!!!!')
+    //onclick add new grocery item
+    //setState to add item to list array?
+  }
+
   render () {
     return (
     	<div>
-        <AddGrocery />
+        <AddGrocery  listener={this.submit}/>
     		<GroceryList data={Data}/>
     	</div>
     )
