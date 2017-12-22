@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Data from '../../database/data.js'
-import GroceryList from './components/GroceryList.jsx'
+import Data from '../../database/data.js';
+import GroceryList from './components/GroceryList.jsx';
+import AddGrocery from './components/AddGrocery.jsx'
 // require ./dependecy.js
 class App extends React.Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class App extends React.Component {
   render () {
     return (
     	<div>
+        <AddGrocery />
     		<GroceryList data={Data}/>
     	</div>
     )

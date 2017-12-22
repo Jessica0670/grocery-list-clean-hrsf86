@@ -7,7 +7,13 @@ class AddGrocery extends React.Component {
   }
 
   render () {
-    return null;
+    return (
+    	<div>
+    		<input id="inputGrocery" type="text" placeholder="What do you need to buy?"/>
+    		<input id="inputQty" type="text" placeholder="How many?"/>
+    		<input id="submit" type="submit"/>
+    	</div>
+    )
   }
 }
 

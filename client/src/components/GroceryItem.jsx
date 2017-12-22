@@ -2,7 +2,7 @@ import React from 'react';
 
 const GroceryItem = (props) => (
   <div>
-  	<div class="singleItem">item: {props.data.description}, quantity: {props.data.quantity}</div>
+  	<div class="singleItem">item: {props.data.description} --------- quantity: {props.data.quantity}</div>
   </div>
 )
 

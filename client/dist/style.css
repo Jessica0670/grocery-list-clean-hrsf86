@@ -13,3 +13,38 @@ body {
 .groceries {
   margin: 10px;
 }
+
+/*.singleItem {
+}*/
+
+.groceries {
+	/*text-align: left;*/
+	/*background-color: #99e8b2;*/
+	height: 300px;
+}
+
+#inputGrocery {
+	width: 200px;
+	/*float: left;*/
+	margin: 10px 0;
+	height: 20px;
+	border-radius: 5px;
+}
+
+#submit {
+	margin: 10px 0;
+	height: 25px;
+	border-radius: 5px;
+}
+
+#submit:hover {
+	background-color: #71e897;
+}
+
+#inputQty {
+	width: 80px;
+	/*float: left;*/
+	margin: 10px 0;
+	height: 20px;
+	border-radius: 5px;
+}
