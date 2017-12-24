@@ -13,9 +13,23 @@ class AddGrocery extends React.Component {
     return (
     	<div>
 
-    		<input className="grocery" name="grocery" value={this.state.list} id="inputGrocery" type="text" placeholder="What do you need to buy?"/>
-    		<input className="qty" value={this.state.list} name="qty" id="inputQty" type="text" placeholder="How many?"/>
-    		<input onClick={() => this.props.onChange($(".grocery,.qty"))} value="Submit" id="submit" type="submit"/>
+    		<input 
+          className="grocery" 
+          name="grocery" 
+          value={this.state.list} 
+          id="inputGrocery" 
+          type="text" 
+          placeholder="What do you need to buy?"
+        />
+    		<input 
+          className="qty" 
+          value={this.state.list} 
+          name="qty" 
+          id="inputQty" 
+          type="text" 
+          placeholder="How many?"
+        />
+    		<input onClick={() => this.props.onChange($(".grocery, .qty"))} value="Submit" id="submit" type="submit"/>
 
     	</div>
     )

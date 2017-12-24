@@ -15,23 +15,23 @@ class App extends React.Component {
   }
 
   handleChange(e) {
-  	console.log(Data.groceryList, 'data')
-  	    console.log('val test', e.val(), 'values')
+  	console.log(e.val(), this.state.value)
     let groceryInput = e.val();
     let newGrocItem = {
-    	id: this.state.list[0].length + 1,
-    	quantity: 1,
+    	id: this.state.list[0].length + 5,
+    	// id: this.state.list[0].length + 1,
+    	quantity: this.state.list[0].quantity,
     	description: groceryInput
     };
-    let dataArray = this.state.list[0];
-    // console.log(newGrocItem.message, 'test input ')
     this.setState({
-    	list: dataArray.concat(newGrocItem)
+    	// list: dataArray.concat(newGrocItem)
+    	list: this.state.list[0].push(newGrocItem)
     });
-    e.val = '';
-    console.log(this.state.list[0].concat(newGrocItem), 'list')
+    // console.log('val test', e.val(), 'values',this.state.list[0].length)
+    // console.log(this.state.list[0].push(newGrocItem), 'list')
 
   }
+
   // click={this.submit.bind(this)} 
   
 //   submit(e) {
@@ -43,7 +43,10 @@ class App extends React.Component {
   render () {
     return (
     	<div>
-        <AddGrocery  value={this.state.value} onChange={this.handleChange.bind(this)}/>
+        	<AddGrocery  
+        		value={this.state.value} 
+        		onChange={this.handleChange.bind(this)}
+        	/>
     		<GroceryList data={Data}/>
     	</div>
     )
