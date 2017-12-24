@@ -2,16 +2,21 @@ import React from 'react';
 class AddGrocery extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { 
+    this.state = {
     }
+
   }
+
+
 
   render () {
     return (
     	<div>
-    		<input id="inputGrocery" type="text" placeholder="What do you need to buy?"/>
-    		<input id="inputQty" type="text" placeholder="How many?"/>
-    		<input onClick={this.props.listener} id="submit" type="submit"/>
+
+    		<input className="grocery" name="grocery" value={this.state.list} id="inputGrocery" type="text" placeholder="What do you need to buy?"/>
+    		<input className="qty" value={this.state.list} name="qty" id="inputQty" type="text" placeholder="How many?"/>
+    		<input onClick={() => this.props.onChange($(".grocery,.qty"))} value="Submit" id="submit" type="submit"/>
+
     	</div>
     )
   }
@@ -19,3 +24,7 @@ class AddGrocery extends React.Component {
 
 export default AddGrocery;
 
+    		// 
+
+// onChange={this.handleChange}
+//     	<form onSubmit={this.submit}>
