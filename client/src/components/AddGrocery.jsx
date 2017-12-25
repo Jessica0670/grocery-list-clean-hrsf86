@@ -29,7 +29,7 @@ class AddGrocery extends React.Component {
           type="text" 
           placeholder="How many?"
         />
-    		<input onClick={() => this.props.onChange($(".grocery, .qty"))} value="Submit" id="submit" type="submit"/>
+    		<input onClick={() => this.props.click($('.grocery, .qty'))} value="Submit" id="submit" type="submit"/>
 
     	</div>
     )
@@ -37,8 +37,3 @@ class AddGrocery extends React.Component {
 }
 
 export default AddGrocery;
-
-    		// 
-
-// onChange={this.handleChange}
-//     	<form onSubmit={this.submit}>

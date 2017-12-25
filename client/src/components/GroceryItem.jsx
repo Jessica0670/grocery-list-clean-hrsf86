@@ -7,4 +7,3 @@ const GroceryItem = (props) => (
 )
 
 export default GroceryItem;
-// {id: 1, quantity: 5, description: "frozen pizza"},
